@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accueil - Portfolio BUT2 - Mathis LABBE</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="identity">
+      <div class="avatar">ML</div>
+      <div>
+        <p class="eyebrow">Portfolio BUT2 Informatique</p>
+        <h1>Mathis LABBE</h1>
+        <p class="subtitle">Alternant développeur chez 3maGroup</p>
+      </div>
+    </div>
+
+    <div class="contact-block">
+      <a href="mailto:mathis.labbe@edu.univ-fcomte.fr">mathis.labbe@edu.univ-fcomte.fr</a>
+      <span>Alternance : 22/09/2025 - 28/08/2027</span>
+    </div>
+
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a class="nav-link active" href="accueil.html">Accueil</a>
+      <a class="nav-link " href="technique.html">Technique</a>
+      <a class="nav-link " href="suivi-projet.html">Suivi de projet</a>
+      <a class="nav-link " href="integration.html">Intégration</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+        <section id="accueil" class="page active">
+      <div class="hero card">
+        <div>
+          <p class="eyebrow">Présentation générale</p>
+          <h2>Un portfolio centré sur mes savoir-faire en alternance</h2>
+          <p>
+            Ce portfolio présente mon évolution durant mon alternance chez <strong>3maGroup</strong>,
+            en tant qu'alternant développeur au sein de l'équipe Desktop. Il met en avant les
+            compétences que j'ai développées à travers des projets concrets, principalement autour
+            de l'application <strong>SpoolBox</strong>, destinée à la manufacture.
+          </p>
+          <p>
+            L'objectif n'est pas seulement de présenter des captures d'écran, mais d'expliquer ce que
+            j'ai appris, comment je l'ai appliqué, et comment mon niveau a progressé entre le début de
+            l'alternance et aujourd'hui.
+          </p>
+        </div>
+        <div class="hero-panel">
+          <span>Projet principal</span>
+          <strong>SpoolBox</strong>
+          <p>Application métier visant à centraliser des informations utilisées par la manufacture.</p>
+        </div>
+      </div>
+
+      <div class="grid two-columns">
+        <article class="card">
+          <h3>Contexte entreprise</h3>
+          <p>
+            3maGroup est une entreprise qui intervient dans l'impression, la manufacture, la
+            communication et la création digitale. L'entreprise possède aussi des outils logiciels
+            internes et des applications métier utilisées par les équipes.
+          </p>
+          <p>
+            Mon alternance se déroule dans l'équipe <strong>Desktop</strong>, composée de cinq personnes
+            en me comptant. Cette équipe s'occupe principalement des applications non web. Mon maître
+            d'alternance est Product Owner, ce qui me permet d'avoir un accompagnement à la fois
+            technique et orienté besoin métier.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Moyens de travail</h3>
+          <ul class="clean-list">
+            <li><strong>Langages :</strong> C#, SQL</li>
+            <li><strong>Interface :</strong> WPF</li>
+            <li><strong>Base de données :</strong> Microsoft SQL Server</li>
+            <li><strong>Outils :</strong> Visual Studio, VS Code, Git, Azure DevOps, Teams, Trello</li>
+            <li><strong>Organisation :</strong> User Stories, sprint, daily, Pull Requests</li>
+          </ul>
+        </article>
+      </div>
+
+      <section class="card">
+        <h3>Mes projets en alternance</h3>
+        <div class="project-grid">
+          <article class="project-card muted">
+            <span class="badge">Recherche</span>
+            <h4>Nodify</h4>
+            <p>
+              Étude d'une DLL afin de vérifier la faisabilité de certaines fonctionnalités avant une
+              éventuelle intégration dans un projet plus important de l'entreprise.
+            </p>
+          </article>
+
+          <article class="project-card muted">
+            <span class="badge">Application C# / WPF</span>
+            <h4>Alfred</h4>
+            <p>
+              Création d'une application permettant de rechercher une adresse mail dans des tâches,
+              puis de la remplacer par une autre pour semi-automatiser une action auparavant manuelle.
+            </p>
+          </article>
+
+          <article class="project-card featured">
+            <span class="badge">Projet principal</span>
+            <h4>SpoolBox</h4>
+            <p>
+              Développement d'une application métier pour la manufacture. Son objectif est de
+              centraliser des informations dispersées à plusieurs endroits afin de limiter la perte
+              de temps et les risques d'erreurs.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Synthèse des savoir-faire mis en jeu</h3>
+        <div class="skills-grid">
+          <div class="skill-card technique-color">
+            <h4>Développer une application métier</h4>
+            <p>Créer ou faire évoluer une application C# / WPF adaptée à un besoin utilisateur réel.</p>
+          </div>
+          <div class="skill-card data-color">
+            <h4>Exploiter des données</h4>
+            <p>Utiliser SQL Server, structurer des données et optimiser leur récupération.</p>
+          </div>
+          <div class="skill-card projet-color">
+            <h4>Travailler en mode projet</h4>
+            <p>Utiliser les User Stories, les tâches techniques, les estimations, les dailies et les PR.</p>
+          </div>
+          <div class="skill-card integration-color">
+            <h4>S'intégrer et communiquer</h4>
+            <p>Échanger avec l'équipe, présenter l'avancement et recueillir les retours utilisateurs.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Portfolio BUT2 Informatique - Mathis LABBE - Alternance chez 3maGroup</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

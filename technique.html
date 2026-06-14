@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Technique - Portfolio BUT2 - Mathis LABBE</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="identity">
+      <div class="avatar">ML</div>
+      <div>
+        <p class="eyebrow">Portfolio BUT2 Informatique</p>
+        <h1>Mathis LABBE</h1>
+        <p class="subtitle">Alternant développeur chez 3maGroup</p>
+      </div>
+    </div>
+
+    <div class="contact-block">
+      <a href="mailto:mathis.labbe@edu.univ-fcomte.fr">mathis.labbe@edu.univ-fcomte.fr</a>
+      <span>Alternance : 22/09/2025 - 28/08/2027</span>
+    </div>
+
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a class="nav-link " href="accueil.html">Accueil</a>
+      <a class="nav-link active" href="technique.html">Technique</a>
+      <a class="nav-link " href="suivi-projet.html">Suivi de projet</a>
+      <a class="nav-link " href="integration.html">Intégration</a>
+    </nav>
+  </header>
+
+  <main class="layout">
+        <section id="technique" class="page active">
+      <div class="page-title card">
+        <p class="eyebrow">Page principale</p>
+        <h2>Technique</h2>
+        <p>
+          Cette partie présente les savoir-faire techniques développés durant mon alternance,
+          principalement à travers SpoolBox. Les traces montrent comment j'ai travaillé sur une
+          application métier, son architecture, son accès aux données et son optimisation.
+        </p>
+      </div>
+
+      <div class="sub-layout">
+        <aside class="subnav" aria-label="Navigation technique">
+          <button class="sub-link active" data-group="technique" data-subpage="tech-interface">Trace 1 - Interface SpoolBox</button>
+          <button class="sub-link" data-group="technique" data-subpage="tech-architecture">Trace 2 - Architecture et code</button>
+          <button class="sub-link" data-group="technique" data-subpage="tech-sql">Trace 3 - SQL et optimisation</button>
+          <button class="sub-link" data-group="technique" data-subpage="tech-bilan">Bilan technique</button>
+        </aside>
+
+        <div class="sub-content">
+          <article id="tech-interface" class="subpage active" data-group="technique">
+            <h3>Développer une interface métier avec SpoolBox</h3>
+
+            <div class="tag-list">
+              <span class="tag technique-color">Concevoir une interface WPF</span>
+              <span class="tag integration-color">Comprendre un besoin utilisateur</span>
+              <span class="tag data-color">Centraliser des informations</span>
+            </div>
+
+            <figure class="trace">
+              <div class="trace-image">
+                <img src="assets/images/InterfacepPrincipaleSpoolBox.png" alt="Interface principale de SpoolBox">
+              </div>
+
+              <figcaption>
+                Trace 1 - Interface principale de SpoolBox. Cette interface regroupe les vues, les filtres,
+                les informations liées aux opérations et les actions disponibles pour l’utilisateur.
+              </figcaption>
+            </figure>
+
+            <p>
+              La <strong>trace 1</strong> présente l’interface principale de SpoolBox, une application destinée
+              aux collaborateurs de la manufacture. Son objectif est de leur permettre de retrouver plus rapidement
+              les informations dont ils ont besoin, sans devoir consulter plusieurs emplacements séparés.
+            </p>
+
+            <p>
+              Cette trace met d’abord en avant le savoir-faire
+              <span class="mark integration-color">comprendre un besoin utilisateur</span>.
+              L’interface a été construite autour d’un problème concret : les utilisateurs perdaient du temps à rechercher
+              des informations dans différents outils ou sources. SpoolBox sert donc de point d’entrée unique pour accéder
+              plus simplement aux données utiles.
+            </p>
+
+            <p>
+              On retrouve aussi le savoir-faire
+              <span class="mark data-color">centraliser des informations</span>.
+              Le tableau principal regroupe plusieurs informations importantes comme la référence, l’opération, la source,
+              l’ERP, le client, l’état et la date de dépôt. Ces données sont affichées ensemble pour donner une vision plus
+              claire de chaque opération.
+            </p>
+
+            <p>
+              Enfin, cette trace illustre le savoir-faire
+              <span class="mark technique-color">concevoir une interface WPF</span>.
+              Les vues à gauche, la barre de recherche, les filtres et les boutons d’action permettent à l’utilisateur
+              de consulter, trier et ouvrir les informations directement depuis l’application. L’enjeu n’était donc pas
+              seulement d’afficher des données, mais de les organiser dans une interface utilisable dans un contexte métier.
+            </p>
+          </article>
+
+          <article id="tech-architecture" class="subpage" data-group="technique">
+            <h3>Structurer une application en plusieurs projets</h3>
+
+            <div class="tag-list">
+              <span class="tag competence-architecture">Structurer une solution C#</span>
+              <span class="tag competence-reperage">Se repérer dans une architecture C# / WPF</span>
+              <span class="tag competence-donnees">Identifier l’accès aux données</span>
+            </div>
+
+            <figure class="trace">
+              <div class="trace-image">
+                <img src="assets/images/ArchitectureSpoolBox.png" alt="Architecture de la solution SpoolBox dans Visual Studio">
+              </div>
+
+              <figcaption>
+                Trace 2 - Organisation technique de SpoolBox dans Visual Studio. La solution est séparée
+                en plusieurs projets afin de distinguer l’application principale, l’interface WPF,
+                la logique métier et l’accès aux données.
+              </figcaption>
+            </figure>
+
+            <p>
+              La <strong>trace 2</strong> présente l’organisation technique de la solution SpoolBox dans Visual Studio.
+              On peut voir que le projet est divisé en plusieurs parties, notamment <strong>SpoolBox.App</strong>,
+              <strong>SpoolBox.Core</strong> et <strong>SpoolBox.DAL</strong>. Cette séparation permet de mieux organiser
+              le code selon le rôle de chaque partie de l’application.
+            </p>
+
+            <p>
+              Cette trace illustre le savoir-faire
+              <span class="mark competence-architecture">structurer une solution C#</span>.
+              Dans une application professionnelle, il est important de ne pas regrouper toute la logique au même endroit.
+              Une organisation en plusieurs projets facilite la lecture du code, les corrections de bugs et les futures évolutions.
+            </p>
+
+            <p>
+              Elle met aussi en avant le savoir-faire
+              <span class="mark competence-reperage">se repérer dans une architecture C# / WPF</span>.
+              La présence des dossiers <strong>ViewModel</strong> et <strong>Vues</strong> montre que l’interface est organisée
+              en plusieurs parties. Avant de modifier une fonctionnalité, il faut donc comprendre où intervenir :
+              dans l’interface, dans le ViewModel, dans la logique métier ou dans une autre partie du projet.
+            </p>
+
+            <p>
+              Enfin, cette trace montre le savoir-faire
+              <span class="mark competence-donnees">identifier l’accès aux données</span>.
+              Le projet <strong>SpoolBox.DAL</strong> correspond à la partie liée à la récupération des données.
+              Cette séparation m’aide à comprendre où se trouvent les traitements liés aux informations utilisées
+              par l’application, sans les mélanger avec l’interface ou la logique métier.
+            </p>
+          </article>
+
+          <article id="tech-sql" class="subpage" data-group="technique">
+            <h3>Optimiser l'accès aux données avec SQL Server</h3>
+            <div class="tag-list">
+              <span class="tag competence-optimisation">Optimiser l’accès aux données</span>
+              <span class="tag competence-requetes">Réduire le nombre d’appels</span>
+              <span class="tag competence-structure">Structurer un traitement efficace</span>
+            </div>
+
+            <figure class="trace">
+              <div class="trace-image">
+                <img src="assets/images/OptimisationDonnees.png" alt="Optimisation de la récupération des données dans SpoolBox">
+              </div>
+              <figcaption>
+                Trace 3 - Optimisation de la récupération des données dans SpoolBox. La récupération globale
+                et l’utilisation d’un dictionnaire permettent de réduire fortement le temps de chargement.
+              </figcaption>
+            </figure>
+
+            <p>
+              La <strong>trace 3</strong> présente une optimisation réalisée dans SpoolBox lors de la récupération
+              des dossiers de production. Au départ, certaines informations étaient récupérées directement dans
+              une boucle, ce qui entraînait de nombreux appels répétés et un temps de chargement d’environ
+              <strong>15 secondes</strong>.
+            </p>
+
+            <p>
+              Cette trace illustre le savoir-faire
+              <span class="mark competence-optimisation">optimiser l’accès aux données</span>.
+              J’ai déplacé la récupération des dossiers en dehors de la boucle afin d’effectuer une seule récupération
+              globale. Les résultats sont ensuite stockés dans un dictionnaire, ce qui permet de les retrouver rapidement
+              pendant le traitement.
+            </p>
+
+            <p>
+              Elle met aussi en avant le savoir-faire
+              <span class="mark competence-requetes">réduire le nombre d’appels</span>.
+              Au lieu de récupérer les informations une par une, l’application prépare d’abord la liste des références
+              nécessaires, puis récupère les données correspondantes en une seule opération.
+            </p>
+
+            <p>
+              Enfin, cette trace montre le savoir-faire
+              <span class="mark competence-structure">structurer un traitement efficace</span>.
+              L’utilisation d’un dictionnaire et de <code>TryGetValue</code> permet d’éviter des recherches inutiles dans
+              la boucle. Après cette modification, le chargement est passé d’environ <strong>15 secondes à moins d’une seconde</strong>.
+            </p>
+          </article>
+
+          <article id="tech-bilan" class="subpage" data-group="technique">
+            <h3>Bilan et auto-évaluation technique</h3>
+
+            <div class="analysis-block">
+              <h4>Savoir-faire général : développer une application métier en C# / WPF</h4>
+
+              <p>
+                Ce savoir-faire regroupe plusieurs compétences travaillées dans les traces précédentes :
+                <span class="mark technique-color">concevoir une interface WPF</span>,
+                <span class="mark integration-color">comprendre un besoin utilisateur</span> et
+                <span class="mark data-color">centraliser des informations</span>.
+                Il est principalement illustré par la <strong>trace 1</strong>, qui présente l’interface principale
+                de SpoolBox.
+              </p>
+
+              <p>
+                Dans le contexte de mon alternance, ce savoir-faire a été utilisé pour développer une application
+                destinée aux collaborateurs de la manufacture. L’objectif n’était pas seulement de créer une interface,
+                mais de proposer un outil capable de regrouper des informations utiles dans un même écran, afin de
+                limiter les recherches manuelles et les risques d’erreur.
+              </p>
+
+              <p>
+                Ce savoir-faire a été appris principalement en entreprise. Avant mon arrivée chez 3maGroup, mon expérience
+                était surtout basée sur Java et je ne connaissais pas encore C#, WPF ni Visual Studio. La principale difficulté
+                a donc été de comprendre le fonctionnement d’une application métier réelle, avec des contraintes utilisateurs
+                et des habitudes de travail déjà existantes.
+              </p>
+
+              <p>
+                Mon niveau actuel est <strong>intermédiaire en progression</strong>. Je suis aujourd’hui capable de comprendre
+                le besoin général d’un utilisateur, de participer à la création d’une interface et de relier cette interface
+                aux informations nécessaires. Je dois encore progresser sur l’anticipation des besoins et sur ma capacité
+                à proposer plus rapidement des améliorations.
+              </p>
+            </div>
+
+            <div class="analysis-block">
+              <h4>Savoir-faire général : structurer une application professionnelle</h4>
+
+              <p>
+                Ce savoir-faire est lié aux compétences
+                <span class="mark competence-architecture">structurer une solution C#</span>,
+                <span class="mark competence-reperage">se repérer dans une architecture C# / WPF</span> et
+                <span class="mark competence-donnees">identifier l’accès aux données</span>.
+                Il est illustré par la <strong>trace 2</strong>, qui montre l’organisation de la solution SpoolBox
+                dans Visual Studio.
+              </p>
+
+              <p>
+                Dans SpoolBox, le projet est séparé en plusieurs parties, comme l’application principale, l’interface,
+                la logique métier et l’accès aux données. Cette organisation permet de rendre le code plus lisible,
+                plus maintenable et plus simple à faire évoluer. Elle m’aide aussi à savoir où intervenir lorsque je dois
+                modifier une fonctionnalité ou corriger un problème.
+              </p>
+
+              <p>
+                Cette compétence a été difficile au départ, car je devais apprendre à me repérer dans une solution plus
+                complexe que les projets réalisés en cours. En cours, les projets sont souvent plus petits et plus guidés.
+                En entreprise, il faut comprendre une architecture existante, respecter les choix déjà faits et éviter de
+                modifier du code au mauvais endroit.
+              </p>
+
+              <p>
+                Avant cette alternance, j’avais tendance à me concentrer sur le code à écrire directement. Aujourd’hui,
+                je comprends mieux l’importance de l’architecture d’un projet. Mon niveau est <strong>correct mais encore
+                perfectible</strong> : je sais mieux me repérer dans une solution C# / WPF, mais je dois encore améliorer
+                ma capacité à analyser l’impact d’une modification sur l’ensemble de l’application.
+              </p>
+            </div>
+
+            <div class="analysis-block">
+              <h4>Savoir-faire général : exploiter et optimiser l’accès aux données</h4>
+
+              <p>
+                Ce savoir-faire rassemble les compétences
+                <span class="mark competence-optimisation">optimiser l’accès aux données</span>,
+                <span class="mark competence-requetes">réduire le nombre d’appels</span> et
+                <span class="mark competence-structure">structurer un traitement efficace</span>.
+                Il est principalement illustré par la <strong>trace 3</strong>, qui présente une optimisation réalisée
+                dans la récupération des dossiers de production.
+              </p>
+
+              <p>
+                Dans SpoolBox, certaines informations doivent être récupérées depuis des sources de données afin d’être
+                affichées dans l’application. Une difficulté rencontrée était le temps de chargement : certaines données
+                étaient récupérées à l’intérieur d’une boucle, ce qui provoquait de nombreux appels répétés et ralentissait
+                fortement l’application.
+              </p>
+
+              <p>
+                Pour résoudre ce problème, j’ai déplacé la récupération des données en dehors de la boucle. L’application
+                prépare d’abord la liste des références nécessaires, récupère les données en une seule opération, puis les
+                stocke dans un dictionnaire pour y accéder rapidement pendant le traitement. Cette modification a permis
+                de passer d’un chargement d’environ <strong>15 secondes</strong> à moins d’<strong>une seconde</strong>.
+              </p>
+
+              <p>
+                Ce savoir-faire a été appris en grande partie en entreprise, car il s’appuie sur un problème réel de performance.
+                Avant cette expérience, je savais utiliser SQL et manipuler des données dans un cadre scolaire. Maintenant,
+                je comprends mieux que l’accès aux données doit aussi être pensé en fonction des performances et de l’expérience
+                utilisateur.
+              </p>
+
+              <p>
+                Mon niveau sur ce savoir-faire est <strong>intermédiaire</strong>. Je suis capable d’identifier un traitement
+                trop coûteux, de proposer une amélioration et de mesurer son effet. Je dois encore progresser sur l’analyse
+                globale des performances et sur les bonnes pratiques d’optimisation dès la conception.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Portfolio BUT2 Informatique - Mathis LABBE - Alternance chez 3maGroup</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
